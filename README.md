@@ -9,7 +9,7 @@ This SDK was created to enable rapid efficient development using Shopbase's API.
 Easily install this package with composer
 
 ```shell
-composer require robwittman/shopify-php-sdk
+composer require mihnsen/shopbase-php-sdk
 ```
 
 Before you can start using this SDK, you have to create a <a href="https://partners.shopify.com/">Shopbase Application</a>
