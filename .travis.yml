@@ -1,0 +1,13 @@
+language: php
+php:
+    - 5.6
+    - 7.1
+    - 7.2
+    - 7.3
+before_script:
+  - composer install --prefer-source --no-interaction --dev
+
+script: ./vendor/bin/phpunit
+
+env:
+    - AUTOLOAD=1

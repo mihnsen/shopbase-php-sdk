@@ -1,0 +1,38 @@
+{
+    "name": "mihnsen/shopbase-php-sdk",
+    "description": "PHP SDK for Shopbase API",
+    "keywords": [
+        "shopbase",
+        "ecommerce",
+        "api",
+        "php"
+    ],
+    "homepage": "http://github.com/mihnsen/shopbase-php-sdk",
+    "license": "MIT",
+    "authors": [],
+    "require": {
+        "php": ">=5.3.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.2",
+        "psr/log": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shopbase\\" : "src/",
+            "Shopbase\\Test\\" : "test/"
+        },
+        "files" : [
+            "src/includes.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.1",
+        "squizlabs/php_codesniffer": "^3.0",
+        "overtrue/phplint": "^0.2.4"
+    },
+    "scripts" : {
+        "lint" : "./vendor/bin/phplint ./ --exclude=vendor",
+        "phpcs" : "./vendor/bin/phpcs ./src"
+    }
+}
