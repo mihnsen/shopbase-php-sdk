@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/robwittman/shopify-php-sdk.svg?branch=master)](https://travis-ci.org/robwittman/shopify-php-sdk)
+[![Build Status](https://travis-ci.org/mihnsen/shopbase-php-sdk.svg?branch=master)](https://travis-ci.org/mihnsen/shopbase-php-sdk)
 
 # Shopbase PHP SDK
 
@@ -12,7 +12,7 @@ Easily install this package with composer
 composer require mihnsen/shopbase-php-sdk
 ```
 
-Before you can start using this SDK, you have to create a <a href="https://partners.shopify.com/">Shopbase Application</a>
+Before you can start using this SDK, you have to create a <a href="https://partners.shopbase.com/">Shopbase Application</a>
 You can now use the API key and secret to generate access tokens, which can then access a stores data
 
 ## Initialization
@@ -23,7 +23,7 @@ To initialize the Api Client:
 $client = new Shopbase\Api(array(
     'api_key' => '<api_key>',
     'api_secret' => '<api_secret>',
-    'myshopify_domain' => 'store.myshopify.com',
+    'onshopbase_domain' => 'store.onshopbase.com',
     'access_token' => '<store_access_token>'
 ));
 ```
@@ -34,7 +34,7 @@ $client = new Shopbase\PrivateApi(array(
     'api_key' => '<api-key>',
     'password' => '<password>',
     'shared_secret' => '<shared-secret>',
-    'myshopify_domain' => '<store>.myshopify.com'
+    'onshopbase_domain' => '<store>.onshopbase.com'
 ));
 ```
 
@@ -163,6 +163,6 @@ foreach ($product->variants as $variant) {
 
 ## References
 
-[Shopbase Partner Login](https://partners.shopify.com)
+[Shopbase Partner Login](https://partners.shopbase.com)
 
-[Shopbase API Reference](https://help.shopify.com/api/reference)
+[Shopbase API Reference](https://help.shopbase.com/api/reference)
